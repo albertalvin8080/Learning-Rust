@@ -1,25 +1,27 @@
+#![allow(warnings)]
 fn main() {
-    let mut acc = BankAccount {
-        owner: String::from("Franz Bonaparta"),
-        balance: 100.0,
+    #[derive(Debug, Default)]
+    struct User {
+        name: String,
+        email: String,
+        active: bool,
+        option_field: Option<u32>,
+    }
+
+    let mut u1 = User {
+        name: String::from("Franz Bonaparta"),
+        email: String::from("fb@mail.com"),
+        ..Default::default() // Fill in fields with default values
     };
 
-    acc.view_balance();
-    acc.withdrawn(30.1);
-    acc.view_balance();
-}
+    println!("{:?}", u1);
 
-struct BankAccount {
-    owner: String,
-    balance: f64,
-}
+    // struct update syntax
+    let mut u2 = User {
+        name: String::from("Helmuth Voss"),
+        ..u1
+    };
 
-impl BankAccount {
-    fn view_balance(&self) {
-        println!("Balance: {:.2}", self.balance);
-    }
-    fn withdrawn(&mut self, quantity: f64) {
-        self.balance -= quantity;
-        println!("Withdrawn: {:.2}", quantity);
-    }
+    println!("{:?}", u2);
+    // println!("{:?}", u1); // String email was moved, so it cannot be borrowed here.
 }
