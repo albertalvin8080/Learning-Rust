@@ -1,4 +1,6 @@
 #![allow(warnings)]
+
+// Update Syntax
 fn main() {
     #[derive(Debug, Default)]
     struct User {
