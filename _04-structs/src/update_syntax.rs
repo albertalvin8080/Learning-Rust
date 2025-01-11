@@ -1,7 +1,4 @@
-#![allow(warnings)]
-
-// Update Syntax
-fn main() {
+pub fn run() {
     #[derive(Debug, Default)]
     struct User {
         name: String,

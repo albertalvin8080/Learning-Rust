@@ -1,7 +1,4 @@
-#![allow(warnings)]
-
-// self reference mutability
-fn main() {
+pub fn run() {
     let mut acc = BankAccount {
         owner: String::from("Franz Bonaparta"),
         balance: 100.0,

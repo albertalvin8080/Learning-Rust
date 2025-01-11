@@ -1,5 +1,3 @@
-#![allow(warnings)]
-
 use std::ops::*;
 #[derive(Debug)]
 struct Awareness;
@@ -26,7 +24,7 @@ impl Sub<Awareness> for SelfAwareness {
     }
 }
 
-fn main() {
+pub fn run() {
     let h = Human;
     let a = Awareness;
     println!("{:?}", h);

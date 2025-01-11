@@ -1,5 +1,3 @@
-#![allow(warnings)]
-
 struct Sheep;
 struct Human;
 trait Animal {
@@ -42,7 +40,7 @@ fn emmit_noise_dyn(animal: &dyn Animal) {
     println!("{}", animal.make_sound());
 }
 
-fn main() {
+pub fn run() {
     let sheep = Sheep;
     let human = Human;
 

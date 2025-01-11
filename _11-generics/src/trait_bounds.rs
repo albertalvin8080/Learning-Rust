@@ -31,7 +31,7 @@ impl Point<f64> {
     }
 }
 
-fn main() {
+pub fn run() {
     let pf64 = Point::new(3.0, 4.0);
     println!("{}", pf64.distance_from_origin());
     println!("{}", pf64.angle_with_x());

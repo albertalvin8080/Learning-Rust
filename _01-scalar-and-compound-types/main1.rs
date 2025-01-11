@@ -1,6 +1,6 @@
 /*
 You can create a project using cargo:
-- cargo new testproject
+- cargo new testproject (or `cargo init` inside the folder)
 - cargo run
 */
 fn main() {
