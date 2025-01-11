@@ -1,13 +1,19 @@
 #![allow(warnings)]
 
-mod object_traits;
-mod operators_traits;
-mod where_for_trait_bounds;
-mod object_safe_traits;
+mod _object_traits;
+mod _operators_traits;
+mod _where_for_trait_bounds;
+mod _object_safe_traits;
+mod _from_into;
+mod _clierror_from_into;
+mod _try_from_into;
 
 fn main () {
-    object_traits::run();
-    operators_traits::run();
-    where_for_trait_bounds::run();
-    object_safe_traits::run();
+    // _object_traits::run();
+    // _operators_traits::run();
+    // _where_for_trait_bounds::run();
+    // _object_safe_traits::run();
+    // _from_into::run();
+    // _clierror_from_into::run();
+    _try_from_into::run();
 }
