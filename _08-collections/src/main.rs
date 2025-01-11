@@ -2,8 +2,10 @@
 
 mod vector;
 mod collections;
+mod hashmap;
 
 fn main() {
     // collections::run();
-    vector::run();
+    // vector::run();
+    hashmap::run();
 }
