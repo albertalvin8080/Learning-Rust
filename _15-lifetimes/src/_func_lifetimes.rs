@@ -1,0 +1,14 @@
+pub fn run() {
+    let r = longest("Franz", "Bonaparta");
+    println!("{}", r); 
+
+    println!("OK");
+}
+
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}

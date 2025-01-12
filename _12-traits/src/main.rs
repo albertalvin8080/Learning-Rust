@@ -7,6 +7,7 @@ mod _object_safe_traits;
 mod _from_into;
 mod _clierror_from_into;
 mod _try_from_into;
+mod _display_debug;
 
 fn main () {
     // _object_traits::run();
@@ -15,5 +16,6 @@ fn main () {
     // _object_safe_traits::run();
     // _from_into::run();
     // _clierror_from_into::run();
-    _try_from_into::run();
+    // _try_from_into::run();
+    _display_debug::run();
 }
