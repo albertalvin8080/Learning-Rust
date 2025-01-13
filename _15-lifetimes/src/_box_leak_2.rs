@@ -31,7 +31,7 @@ fn init() -> Option<&'static mut Config> {
 
     /* 
     1. Allocate Config{} into heap memory.
-    2. Leak it (make it acessible for the entire rest of the program, and thus 'static).
+    2. Leak it (make it acessible for the entire rest of the program because it won't be automatically cleaned, and thus 'static).
     3. Wrap it inside Option<>.
     */
     let b: Box<Config> = Box::new(Config {
