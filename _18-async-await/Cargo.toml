@@ -2,7 +2,11 @@
 name = "_18-async-await"
 version = "0.1.0"
 edition = "2021"
+# default-run = "main_tcpstream"
+# default-run = "main_axum"
+# default-run = "main"
 
 [dependencies]
 anyhow = "1.0.95"
+axum = "0.8.1"
 tokio = { version = "1.43.0", features = ["rt-multi-thread", "macros"] }
