@@ -136,3 +136,4 @@ Ground-Truth-Evaluation/yolov10/
 analises/
 GCMS/GCMS-Albert-Sobral*/
 Ground-Truth-Evaluation/weights_v2/*.zip
+Ground-Truth-Evaluation/weights_v2/onnx/
